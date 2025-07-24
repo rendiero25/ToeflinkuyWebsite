@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-primary: 'Outfit', sans-serif;
+
+  --color-primary: #324355;
+  --color-bgbutton: #FCF9F0;
+  --color-blue: #D5E9F2;
+}

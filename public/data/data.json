@@ -1,0 +1,65 @@
+[
+    {
+        "id": "toefl-1",
+        "name": "SERTIFIKAT TOEFL ITP ETS - ACHIEVEMENT",
+        "price": "Rp. 1.199.999",
+        "description": "",
+        "image": "/images/images1.jpg" 
+    },
+
+    {
+        "id": "toefl-2",
+        "name": "JASA SERTIF TOEFL ITP ETS - SCORE REPORT",
+        "price": "Rp. 1.199.999",
+        "description": "JASA SERTIFIKAT TERIMA JADI - TOEFL ITP ETS / IELTS / TOEIC / TPA BAPPENAS / PBT / EPT / LIA. Proses Kilat - SEHARI JADI!",
+        "image": "/images/images2.jpg"
+    },
+
+    {
+        "id": "toefl-3",
+        "name": "JOKI - MEKANISME REMOTE",
+        "price": "",
+        "description": "",
+        "image": "/images/images3.jpg"
+    },
+
+    {
+        "id": "toefl-4",
+        "name": "JOKI - MEKANISME JARAK JAUH",
+        "price": "",
+        "description": "",
+        "image": "/images/images4.jpg"
+    },
+
+    {
+        "id": "toefl-5",
+        "name": "JASA SERTIF IELTS",
+        "price": "Rp. 3.999.999",
+        "description": "JASA SERTIFIKAT TERIMA JADI - TOEFL ITP ETS / IELTS / TOEIC / TPA BAPPENAS / PBT / EPT / LIA. Proses Kilat - SEHARI JADI!",
+        "image": "/images/images5.jpg"
+    },
+
+    {
+        "id": "toefl-6",
+        "name": "GARANSI JOKI TOEFL ITP ETS > 500",
+        "price": "Rp. 1.199.999",
+        "description": "Sertifikat yang kamu terima dijamin asli dan langsung diterbitkan oleh lembaga resmi ETS",
+        "image": "/images/images6.jpg"
+    },
+
+    {
+        "id": "toefl-7",
+        "name": "SERTIFIKAT TPA BAPPENAS",
+        "price": "Rp. 1.399.999",
+        "description": "JASA SERTIFIKAT TERIMA JADI - TOEFL ITP ETS / IELTS / TOEIC / TPA BAPPENAS / PBT / EPT / LIA. Proses Kilat - SEHARI JADI!",
+        "image": "/images/images7.jpg"
+    },
+
+    {
+        "id": "toefl-8",
+        "name": "TERIMA BERES (BIAYA TEST + JOKI) ENGLISHVIT",
+        "price": "Rp. 400.000",
+        "description": "TOEFL TERIMA JADI - eCERTIFICATE",
+        "image": "/images/images8.jpg"
+    }
+]
