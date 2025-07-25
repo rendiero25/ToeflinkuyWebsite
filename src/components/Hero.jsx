@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className="">
             <div className='relative'>
-                <div className='w-full h-[60rem] xl:h-auto'>
+                <div className='w-full h-[50rem] xl:h-auto'>
                     <img src={worldBG} alt="World Background" className="w-full h-full object-cover" />
                 </div>
             

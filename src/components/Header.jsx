@@ -1,7 +1,32 @@
 import { RiMenu5Fill } from "react-icons/ri";
 import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+    const navigate = useNavigate();
+
+    const linkToForWho = () => {
+        navigate('/#for-who');
+    }
+
+    const linkToProducts = () => {
+        navigate('/#products');
+    }
+
+    const linkToKeunggulan = () => {
+        navigate('/#keunggulan');
+    }
+
+    const linkToTestimoni = () => {
+        navigate('/#testimoni');
+    }
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
     return (
         <header className="container mx-auto">
             <div className="py-2 xl:py-4 px-6">
@@ -9,15 +34,14 @@ const Header = () => {
                     <h1 className="text-lg xl:text-2xl font-bold text-center my-4 text-primary">toeflin.kuy</h1>
                 
                     <ul className="hidden xl:flex flex-row gap-6 justify-between items-center text-primary text-lg font-normal">
-                        <li>Keunggulan</li>
-                        <li>Untuk Siapa?</li>
-                        <li>Produk</li>
-                        <li>Kenapa Kami</li>
-                        <li>Testimoni</li>
+                        <li onClick={linkToForWho}>Untuk Siapa?</li>
+                        <li onClick={linkToProducts}>Produk</li>
+                        <li onClick={linkToKeunggulan}>Keunggulan</li>
+                        <li onClick={linkToTestimoni}>Testimoni</li>
                     </ul>
 
                     <div className="xl:hidden">
-                        <RiMenu5Fill className="text-primary size-7"/>
+                        <RiMenu5Fill className="text-primary size-7" onClick={toggleMenu}/>
                     </div>
 
                     <Button 
@@ -26,6 +50,17 @@ const Header = () => {
                     />
                 </div>
             </div>
+
+            {isMenuOpen && (
+                <div className="absolute top-16 left-0 w-full bg-gradient-to-b from-white via-bgbutton to-white shadow-lg z-10">
+                    <ul className="flex flex-col justify-between items-center gap-6 py-15 text-primary text-4xl font-bold">
+                        <li onClick={linkToForWho}>Untuk Siapa?</li>
+                        <li onClick={linkToProducts}>Produk</li>
+                        <li onClick={linkToKeunggulan}>Keunggulan</li>
+                        <li onClick={linkToTestimoni}>Testimoni</li>
+                    </ul>
+                </div>
+            )}
             
         </header>
     );
