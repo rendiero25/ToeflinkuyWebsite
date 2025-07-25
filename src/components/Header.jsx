@@ -29,7 +29,7 @@ const Header = () => {
 
     return (
         <header className="container mx-auto">
-            <div className="py-2 xl:py-4 px-6">
+            <div className="py-2 xl:py-4 px-6 lg:px-20">
                 <div className="flex flex-row justify-between items-center gap-2">
                     <h1 className="text-lg xl:text-2xl font-bold text-center my-4 text-primary">toeflin.kuy</h1>
                 

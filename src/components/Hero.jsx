@@ -12,7 +12,7 @@ const Hero = () => {
             
                 <div className='absolute top-0 left-0 w-full'>
                     <div className='container mx-auto'>
-                        <div className='px-6'>
+                        <div className='px-6 lg:px-20'>
                             <div className='flex flex-col xl:flex-row justify-between items-center gap-2'>
                                 <div className='xl:w-1/2 flex flex-col justify-between items-center xl:items-start gap-4'>
                                     <h1 className='text-primary font-bold text-4xl text-center xl:text-left xl:text-6xl leading-tight'>Nilai TOEFL Tinggi <br /> Tanpa Ribet? Biar Kami <br className='hidden xl:flex'/> Yang Urus!</h1>

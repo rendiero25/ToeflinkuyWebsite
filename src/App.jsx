@@ -1,6 +1,10 @@
 import Header from './components/Header';
 import HeroSec from './components/Hero';
 import ForWhoandProducts from './components/ForWhoandProducts';
+import Advantages from './components/Advantages';
+import Testimonial from './components/Testimonial';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -14,7 +18,11 @@ const App = () => {
 
           <HeroSec />
           <ForWhoandProducts />
-
+          <Advantages />
+          <Testimonial />
+          <Banner />
+          
+          <Footer />
         </div>
       </div>
 
