@@ -4,17 +4,40 @@ import Icon2 from '../assets/icon2.png';
 import Icon3 from '../assets/icon3.png';
 import Icon4 from '../assets/icon4.png';
 import Icon5 from '../assets/icon5.png';
+import { motion } from 'motion/react';
 
 const Advantages = () => {
     return(
-        <div className="bg-bgbutton w-full py-10 -mt-20" style={{ backgroundImage: `url(${bgAdvatages})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+        <motion.div 
+            id="keunggulan"
+            className="bg-bgbutton w-full py-10 -mt-20" 
+            style={{ backgroundImage: `url(${bgAdvatages})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-100px" }}
+        >
             <div className="container mx-auto">
                 <div className="px-6 lg:px-20">
                     <div className='flex flex-col justify-between items-center gap-5 py-20'>
-                        <h2 className="text-3xl font-bold text-primary text-center">Keunggulan Layanan Kami</h2>
+                        <motion.h2 
+                            className="text-3xl font-bold text-primary text-center"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
+                            Keunggulan Layanan Kami
+                        </motion.h2>
                     
                         <div className='flex flex-col justify-between items-center gap-8'>
-                            <div className='flex flex-col xl:flex-row justify-between items-center gap-12 mt-15'>
+                            <motion.div 
+                                className='flex flex-col xl:flex-row justify-between items-center gap-12 mt-15'
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                                viewport={{ once: true }}
+                            >
                                 <div className='flex flex-col justify-between items-center xl:items-start gap-4'>
                                     <img src={Icon1} alt="icon1" className='w-13'/>
                                     <h4 className='text-primary font-bold text-xl'>Aman & Terpercaya</h4>
@@ -41,7 +64,7 @@ const Advantages = () => {
                                         tercapai. Kalau tidak tercapai, uang kembali!
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
 
                         <div className='flex flex-col justify-between items-center gap-8 -mt-5 2xl:max-w-4xl'>
@@ -72,7 +95,7 @@ const Advantages = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

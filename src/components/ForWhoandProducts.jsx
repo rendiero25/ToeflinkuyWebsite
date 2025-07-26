@@ -5,6 +5,7 @@ import { FaBookReader } from "react-icons/fa";
 import { useState, useEffect } from "react";
 import { FaStar } from "react-icons/fa";
 import Button from "../components/Button";
+import { motion } from 'motion/react';
 
 const ForWhoandProducts = () => {
 
@@ -31,7 +32,13 @@ const ForWhoandProducts = () => {
     }, []);
     
     return(
-        <div className="w-full h-auto sm:mt-30 md:mt-60 lg:mt-70 xl:mt-20 2xl:mt-0">
+        <motion.div 
+            className="w-full h-auto sm:mt-30 md:mt-60 lg:mt-70 xl:mt-20 2xl:mt-0"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-100px" }}
+        >
             <div className="relative w-full flex flex-col justify-between items-center">
                 <div className="bg-white w-full h-auto min-h-[20rem] xl:min-h-27.5"></div>
                 <div className="bg-blue w-full h-auto"></div>
@@ -39,7 +46,14 @@ const ForWhoandProducts = () => {
                 <div className="absolute left-0 top-0 w-full z-20">
                     <div className="container mx-auto">
                         <div className="px-6 lg:px-20 flex flex-col gap-8 xl:gap-12 justify-between items-center">                    
-                            <div id="for-who"  className="flex flex-col xl:flex-row gap-12 justify-between p-8 h-auto xl:h-55 items-center bg-bgbutton rounded-2xl border-2 border-primary border-r-15 border-b-15">
+                            <motion.div 
+                                id="for-who"  
+                                className="flex flex-col xl:flex-row gap-12 justify-between p-8 h-auto xl:h-55 items-center bg-bgbutton rounded-2xl border-2 border-primary border-r-15 border-b-15"
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                                viewport={{ once: true }}
+                            >
                                 <div className="flex flex-col justify-center items-center gap-2 xl:w-1/4 h-full ">
                                     <IoIosPeople className="text-primary size-18 xl:size-20" />
                                     <p className="text-primary font-normal text-lg 2xl:text-xl text-center">Mahasiswa yang butuh nilai TOEFL buat syarat wisuda</p>
@@ -65,28 +79,56 @@ const ForWhoandProducts = () => {
                                     <FaBookReader className="text-primary size-10 2xl:size-13" />
                                     <p className="text-primary font-normal text-lg text-center">Kamu yang udah belajar tapi tetap gagal naik skor</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
 
-                <div id="products" className="bg-blue w-full pt-[38rem] 2xl:pt-10 pb-20 xl:pb-30">
+                <motion.div 
+                    id="products" 
+                    className="bg-blue w-full pt-[38rem] 2xl:pt-10 pb-20 xl:pb-30"
+                    initial={{ opacity: 0, y: 100 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+                    viewport={{ once: true, margin: "-100px" }}
+                >
                     <div className="container mx-auto">
                         <div className="px-6 lg:px-20">
-                            <div id="products" className="mt-6 xl:mt-8 flex flex-col justify-between items-center gap-5">
-                                <div className="flex flex-col xl:flex-row justify-between items-center gap-2 w-full 2xl:mt-40">
+                            <div className="mt-6 xl:mt-8 flex flex-col justify-between items-center gap-5">
+                                <motion.div 
+                                    className="flex flex-col xl:flex-row justify-between items-center gap-2 w-full 2xl:mt-40"
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                                    viewport={{ once: true }}
+                                >
                                     <h2 className="text-3xl font-bold text-primary text-center xl:text-left xl:w-1/2">Pilihan Layanan TOEFL Kami</h2>
                                     <p className="text-primary font-normal text-xl text-center xl:text-left xl:w-1/2">Pilih paket yang paling sesuai dengan 
                                         kebutuhan kamu. Semua dikerjakan oleh tim profesional, dengan hasil real & terbukti!
                                     </p>
-                                </div>
+                                </motion.div>
 
                                 <div className="bg-blue mt-15">
                                     <div className="columns-1 xl:columns-2 2xl:columns-3 gap-8 space-y-8">
-                                        {dataFetch.map((product) => (
-                                            <div key={product.id} className="bg-bgbutton rounded-2xl border-2 border-primary border-r-10 border-b-10 p-8 break-inside-avoid mb-8">
+                                        {dataFetch.map((product, index) => (
+                                            <motion.div 
+                                                key={product.id} 
+                                                className="bg-bgbutton rounded-2xl border-2 border-primary border-r-10 border-b-10 p-8 break-inside-avoid mb-8"
+                                                initial={{ opacity: 0, y: 50, scale: 0.9 }}
+                                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                                                transition={{ 
+                                                    duration: 0.6, 
+                                                    delay: index * 0.1, 
+                                                    ease: "easeOut" 
+                                                }}
+                                                viewport={{ once: true, margin: "-50px" }}
+                                                whileHover={{ 
+                                                    scale: 1.02,
+                                                    boxShadow: "0 10px 30px rgba(50, 67, 85, 0.15)"
+                                                }}
+                                            >
                                                 <div className="flex flex-col justify-between items-start gap-6">
-                                                    <img src={product.image} alt={product.name} />
+                                                    <img src={product.image} alt={product.name} className="rounded-xl"/>
 
                                                     <div className="flex flex-col xl:flex-row justify-between items-left gap-4">
                                                         <h3 className="text-primary font-bold text-2xl xl:text-left">{product.name}</h3>
@@ -115,16 +157,16 @@ const ForWhoandProducts = () => {
                                                         customStyles={"bg-primary text-white text-2xl px-6 py-3 mt-6"}
                                                     />
                                                 </div>
-                                            </div>
+                                            </motion.div>
                                         ))}
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
         
     )
 }

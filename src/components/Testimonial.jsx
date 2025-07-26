@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { motion } from 'motion/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -50,22 +51,41 @@ const Testimonial = () => {
     ];
 
     return(
-        <div id="testimoni" className="w-full py-10 xl:py-20 bg-white">
+        <motion.div 
+            id="testimoni" 
+            className="w-full py-10 xl:py-20 bg-white"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-100px" }}
+        >
             <div className="container mx-auto">
                 <div className="px-6 lg:px-20">
                     <div className="flex flex-col justify-center items-center gap-12">
                         {/* Title & Subtitle */}
-                        <div className="flex flex-col xl:flex-row w-full gap-4 xl:gap-20 justify-center items-center text-center">
+                        <motion.div 
+                            className="flex flex-col xl:flex-row w-full gap-4 xl:gap-20 justify-center items-center text-center"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
                             <h2 className="lg:w-1/2 2xl:w-auto text-3xl xl:text-4xl font-bold text-primary md:text-left">
                                 Testimonial Klien Kami
                             </h2>
                             <p className="lg:w-1/2 2xl:w-auto text-primary font-normal text-xl xl:text-2xl max-w-4xl md:text-left">
                                 Bukannya Kami yang Bilang, Tapi Mereka yang Udah Ngerasain Sendiri
                             </p>
-                        </div>
+                        </motion.div>
 
                         {/* Swiper Container */}
-                        <div className="w-full relative xl:px-20">
+                        <motion.div 
+                            className="w-full relative xl:px-20"
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                        >
                             <Swiper
                                 modules={[Navigation, Pagination, Autoplay]}
                                 spaceBetween={30}
@@ -95,7 +115,7 @@ const Testimonial = () => {
                             >
                                 {testimonials.map((testimonial) => (
                                     <SwiperSlide key={testimonial.id}>
-                                        <div className="bg-bgbutton rounded-2xl border-2 border-primary border-r-10 border-b-10 p-8 h-[25.5rem] xl:h-[23.5rem] flex flex-col gap-6">
+                                        <div className="bg-bgbutton rounded-2xl border-2 border-primary border-r-10 border-b-10 p-8 h-[27.5rem] xl:h-[23.5rem] flex flex-col gap-6">
                                             {/* Testimoni */}
                                             <div className="flex-grow">
                                                 <p className="text-primary font-medium text-xl 2xl:text-2xl text-left leading-relaxed">
@@ -136,12 +156,12 @@ const Testimonial = () => {
                             </Swiper>
 
                             {/* Custom Navigation Buttons */}
-                            <div className="hidden swiper-button-prev-custom absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-primary rounded-full xl:flex items-center justify-center cursor-pointer shadow-lg hover:bg-opacity-80 transition-all">
+                            <div className="hidden -mt-10 swiper-button-prev-custom absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-primary rounded-full xl:flex items-center justify-center cursor-pointer shadow-lg hover:bg-opacity-80 transition-all">
                                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                                 </svg>
                             </div>
-                            <div className="hidden swiper-button-next-custom absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-primary rounded-full xl:flex items-center justify-center cursor-pointer shadow-lg hover:bg-opacity-80 transition-all">
+                            <div className="hidden -mt-10 swiper-button-next-custom absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-primary rounded-full xl:flex items-center justify-center cursor-pointer shadow-lg hover:bg-opacity-80 transition-all">
                                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                 </svg>
@@ -149,7 +169,7 @@ const Testimonial = () => {
 
                             {/* Custom Pagination */}
                             <div className="swiper-pagination-custom flex justify-center mt-8"></div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
@@ -167,7 +187,7 @@ const Testimonial = () => {
                     background-color: #324355;
                 }
             `}</style>
-        </div>
+        </motion.div>
     )
 }
 
