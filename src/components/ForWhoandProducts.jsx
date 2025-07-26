@@ -130,14 +130,14 @@ const ForWhoandProducts = () => {
                                                 <div className="flex flex-col justify-between items-start gap-6">
                                                     <img src={product.image} alt={product.name} className="rounded-xl"/>
 
-                                                    <div className="flex flex-col xl:flex-row justify-between items-left gap-4">
+                                                    <div className="flex flex-col xl:flex-row justify-between items-left gap-4 w-full">
                                                         <h3 className="text-primary font-bold text-2xl xl:text-left">{product.name}</h3>
                                                         <div className="flex flex-row items-left gap-2">
-                                                            <FaStar className="text-yellow-500 size-6" />
-                                                            <FaStar className="text-yellow-500 size-6" />
-                                                            <FaStar className="text-yellow-500 size-6" />
-                                                            <FaStar className="text-yellow-500 size-6" />
-                                                            <FaStar className="text-yellow-500 size-6" />
+                                                            <FaStar className="text-yellow-500 size-6 xl:size-4 xl:mt-2" />
+                                                            <FaStar className="text-yellow-500 size-6 xl:size-4 xl:mt-2" />
+                                                            <FaStar className="text-yellow-500 size-6 xl:size-4 xl:mt-2" />
+                                                            <FaStar className="text-yellow-500 size-6 xl:size-4 xl:mt-2" />
+                                                            <FaStar className="text-yellow-500 size-6 xl:size-4 xl:mt-2" />
                                                         </div>
                                                     </div>
 
