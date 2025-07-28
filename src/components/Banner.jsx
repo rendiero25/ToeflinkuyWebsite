@@ -19,7 +19,7 @@ const Banner = () => {
                         <motion.img 
                             src={BannerBg} 
                             alt="Banner Background" 
-                            className="w-[30rem] h-auto object-cover"
+                            className="w-[15rem] h-auto object-cover border-b-5 border-primary"
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
