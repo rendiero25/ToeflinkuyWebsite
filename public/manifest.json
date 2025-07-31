@@ -1,0 +1,25 @@
+{
+  "name": "Joki TOEFL & Jasa Sertifikat TOEFL IELTS Terpercaya - Toeflin.Kuy",
+  "short_name": "Toeflin.Kuy",
+  "description": "Jasa joki TOEFL terpercaya dan jasa sertifikat TOEFL IELTS resmi. Garansi skor tinggi, proses cepat, aman 100%. Khusus mahasiswa, beasiswa LPDP, CPNS, BUMN.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF9F0",
+  "theme_color": "#324355",
+  "icons": [
+    {
+      "src": "/vite.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/vite.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["education", "business"],
+  "lang": "id",
+  "scope": "/",
+  "orientation": "portrait-primary"
+}

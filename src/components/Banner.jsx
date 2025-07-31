@@ -18,7 +18,7 @@ const Banner = () => {
 
                         <motion.img 
                             src={BannerBg} 
-                            alt="Banner Background" 
+                            alt="Konsultasi gratis jasa joki TOEFL dan sertifikat IELTS - Hubungi Toeflin.Kuy untuk solusi skor TOEFL IELTS terbaik" 
                             className="w-[15rem] h-auto object-cover border-b-5 border-primary"
                             initial={{ opacity: 0, scale: 0.8 }}
                             whileInView={{ opacity: 1, scale: 1 }}

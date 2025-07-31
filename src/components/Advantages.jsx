@@ -27,7 +27,7 @@ const Advantages = () => {
                             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                             viewport={{ once: true }}
                         >
-                            Keunggulan Layanan Kami
+                            Keunggulan Jasa Joki TOEFL & Sertifikat IELTS Kami
                         </motion.h2>
                     
                         <div className='flex flex-col justify-between items-center gap-8'>
@@ -42,8 +42,7 @@ const Advantages = () => {
                                     <img src={Icon1} alt="icon1" className='w-13'/>
                                     <h4 className='text-primary font-bold text-xl'>Aman & Terpercaya</h4>
                                     <p className='text-primary font-normal text-lg text-center xl:text-left'>
-                                        Sudah terbukti bantu ratusan klien lulus dengan skor tinggi, semua dikerjakan 
-                                        olehtim profesional berpengalaman.
+                                        Sudah terbukti bantu ratusan klien lulus dengan skor tinggi. Semua dikerjakan oleh tim profesional berpengalaman.
                                     </p>
                                 </div>
 
@@ -73,14 +72,13 @@ const Advantages = () => {
                                     <img src={Icon4} alt="icon4" className='w-13'/>
                                     <h4 className='text-primary font-bold text-xl'>Bisa Untuk Semua Platform</h4>
                                     <p className='text-primary font-normal text-lg text-center'>
-                                        TOEFL ITP, TOEFL Prediction, sampai sertifikat instansi — kami siap bantu di 
-                                        berbagai jenis tes TOEFL.
+                                        Kami siap bantu di berbagai jenis tes TOEFL dan IELTS untuk keperluan akademik maupun profesional.
                                     </p>
                                 </div>
 
                                 <div className='flex flex-col justify-between items-center gap-4'>
                                     <img src={Icon5} alt="icon5" className='w-13'/>
-                                    <h4 className='text-primary font-bold text-xl'>Proses Cepat & Tanpa Ribet</h4>
+                                    <h4 className='text-primary font-bold text-xl text-center'>Proses Cepat & Tanpa Ribet</h4>
                                     <p className='text-primary font-normal text-lg text-center'>
                                         Konsultasi gratis, pilih paket, bayar, tinggal tunggu hasil. Semudah itu.
                                     </p>

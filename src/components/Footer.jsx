@@ -49,7 +49,7 @@ const Footer = () => {
                             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                             viewport={{ once: true }}
                         >
-                            Siap Bantu Skor TOEFL Kamu Naik Sekarang Juga!
+                            Siap Bantu Skor TOEFL IELTS Kamu Naik Sekarang Juga!
                         </motion.h2>
 
                         <motion.p 
@@ -59,7 +59,7 @@ const Footer = () => {
                             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
                             viewport={{ once: true }}
                         >
-                            Toeflin.Kuy — Solusi praktis untuk skor TOEFL tinggi, tanpa stres, tanpa ribet.
+                            Toeflin.Kuy — Solusi praktis <strong>jasa joki TOEFL</strong> dan <strong>jasa sertifikat IELTS</strong> untuk skor tinggi, tanpa stres, tanpa ribet.
                         </motion.p>
                     
                         <motion.ul 

@@ -74,7 +74,7 @@ const Testimonial = () => {
                                 Testimonial Klien Kami
                             </h2>
                             <p className="lg:w-1/2 2xl:w-auto text-primary font-normal text-xl xl:text-2xl max-w-4xl md:text-left">
-                                Bukannya Kami yang Bilang, Tapi Mereka yang Udah Ngerasain Sendiri
+                                Bukannya Kami yang Bilang, Tapi Mereka yang Udah Ngerasain Sendiri <strong>Jasa Joki TOEFL</strong> dan <strong>Jasa Sertif IELTS</strong> Kami
                             </p>
                         </motion.div>
 

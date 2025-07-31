@@ -54,30 +54,38 @@ const ForWhoandProducts = () => {
                                 transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
                                 viewport={{ once: true }}
                             >
-                                <div className="flex flex-col justify-center items-center gap-2 xl:w-1/4 h-full ">
-                                    <IoIosPeople className="text-primary size-18 xl:size-20" />
-                                    <p className="text-primary font-normal text-lg 2xl:text-xl text-center">Mahasiswa yang butuh nilai TOEFL buat syarat wisuda</p>
+                                <div className="flex flex-col justify-center items-center xl:w-1/4 h-full ">
+                                    <IoIosPeople className="text-primary size-18 2xl:size-20" />
+                                    <p className="text-primary font-normal text-lg 2xl:text-xl text-center">
+                                        Mahasiswa yang butuh <strong>jasa sertif TOEFL</strong> buat syarat wisuda dan sidang skripsi
+                                    </p>
                                 </div>
 
                                 <div className="border-1 xl:border-2 rounded-full border-primary w-35 xl:w-1 xl:h-35"></div>
 
                                 <div className="flex flex-col justify-center items-center gap-2 xl:w-1/4 h-full">
-                                    <SiGooglescholar className="text-primary size-10 2xl:size-13" />
-                                    <p className="text-primary font-normal text-lg text-center ">Fresh graduate yang lagi daftar kerja / CPNS</p>
+                                    <SiGooglescholar className="text-primary size-10 2xl:size-10" />
+                                    <p className="text-primary font-normal text-lg text-center">
+                                        Fresh graduate yang butuh <strong>jasa sertif TOEFL</strong> untuk daftar kerja, CPNS & BUMN
+                                    </p>
                                 </div>
 
                                 <div className="border-1 xl:border-2 rounded-full border-primary w-35 xl:w-1 xl:h-35"></div>
 
                                 <div className="flex flex-col justify-center items-center gap-2 xl:w-1/4 h-full">
-                                    <IoIosDocument className="text-primary size-10 2xl:size-13" />
-                                    <p className="text-primary font-normal text-lg text-center">Pencari Beasiswa dalam/luar negeri</p>
+                                    <IoIosDocument className="text-primary size-10 2xl:size-12" />
+                                    <p className="text-primary font-normal text-lg text-center">
+                                        Pencari Beasiswa LPDP yang butuh <strong>jasa sertif IELTS</strong> dalam/luar negeri
+                                    </p>
                                 </div>
 
                                 <div className="border-1 xl:border-2 rounded-full border-primary w-35 xl:w-1 xl:h-35"></div>
 
                                 <div className="flex flex-col justify-center items-center gap-2 xl:w-1/4 h-full">
-                                    <FaBookReader className="text-primary size-10 2xl:size-13" />
-                                    <p className="text-primary font-normal text-lg text-center">Kamu yang udah belajar tapi tetap gagal naik skor</p>
+                                    <FaBookReader className="text-primary size-10 2xl:size-10" />
+                                    <p className="text-primary font-normal text-lg text-center">
+                                        Kamu yang udah belajar tapi tetap gagal naik skor, coba <strong>joki TOEFL</strong> kami!
+                                    </p>
                                 </div>
                             </motion.div>
                         </div>
@@ -94,17 +102,21 @@ const ForWhoandProducts = () => {
                 >
                     <div className="container mx-auto">
                         <div className="px-6 lg:px-20">
-                            <div className="mt-6 xl:mt-8 flex flex-col justify-between items-center gap-5">
+                            <div className="mt-12 xl:mt-8 flex flex-col justify-between items-center gap-5">
                                 <motion.div 
-                                    className="flex flex-col xl:flex-row justify-between items-center gap-2 w-full 2xl:mt-40"
+                                    className="flex flex-col xl:flex-row justify-between items-center gap-8 xl:gap-20 w-full 2xl:mt-40"
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
                                     viewport={{ once: true }}
                                 >
-                                    <h2 className="text-3xl font-bold text-primary text-center xl:text-left xl:w-1/2">Pilihan Layanan TOEFL Kami</h2>
-                                    <p className="text-primary font-normal text-xl text-center xl:text-left xl:w-1/2">Pilih paket yang paling sesuai dengan 
-                                        kebutuhan kamu. Semua dikerjakan oleh tim profesional, dengan hasil real & terbukti!
+                                    <h2 className="text-3xl font-bold text-primary text-center xl:text-left xl:w-1/2">
+                                        Layanan Joki TOEFL & Jasa Sertifikat IELTS Kami
+                                    </h2>
+                                    <p className="text-primary font-normal text-xl text-center xl:text-left xl:w-1/2">
+                                        Pilih paket <strong>jasa joki TOEFL</strong> dan <strong>jasa sertifikat TOEFL IELTS</strong> yang paling sesuai dengan 
+                                        kebutuhan kamu. Semua dikerjakan oleh tim profesional, dengan hasil real & terbukti untuk 
+                                        mahasiswa, beasiswa LPDP, CPNS, BUMN, dan sidang skripsi!
                                     </p>
                                 </motion.div>
 

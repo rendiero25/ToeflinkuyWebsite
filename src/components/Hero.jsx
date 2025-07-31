@@ -28,12 +28,17 @@ const Hero = () => {
                                     transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                                     viewport={{ once: true }}
                                 >
-                                    <h1 className='text-primary font-bold text-4xl text-center xl:text-left xl:text-6xl leading-tight'>Nilai TOEFL Tinggi <br /> Tanpa Ribet? Biar Kami <br className='hidden xl:flex'/> Yang Urus!</h1>
+                                    <h1 className='text-primary font-bold text-4xl text-center xl:text-left xl:text-6xl leading-tight'>
+                                        <span itemProp="name" className='text-2xl text-primary'>Joki TOEFL & Jasa Sertifikat IELTS Terpercaya</span> <br /> 
+                                        Nilai TOEFL Tinggi Tanpa Ribet? <br className='hidden xl:flex'/> 
+                                        Biar Kami Yang Urus!
+                                    </h1>
                                 
-                                    <p className='text-primary font-normal text-xl text-center xl:text-left mb-8'>Capek belajar tapi nilai TOEFL tetap nggak naik-naik? Atau nggak 
-                                        punya waktu buat ngulang tes berkali-kali? Tenang, toeflin.kuy 
-                                        siap bantu kamu dapat skor TOEFL impian dengan aman, cepat, dan 
-                                        tanpa stres!
+                                    <p className='text-primary font-normal text-xl text-center xl:text-left mb-8'>
+                                        Capek belajar tapi nilai TOEFL tetap nggak naik-naik? Atau nggak 
+                                        punya waktu buat ngulang tes berkali-kali? Tenang, <strong>jasa joki TOEFL</strong> dan 
+                                        <strong> jasa sertifikat TOEFL IELTS</strong> terpercaya kami siap bantu kamu dapat skor TOEFL impian dengan 
+                                        aman, cepat, dan tanpa stres! Cocok untuk mahasiswa, beasiswa LPDP, CPNS, dan BUMN.
                                     </p>
                                     
                                     <Button 
@@ -49,7 +54,7 @@ const Hero = () => {
                                     transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
                                     viewport={{ once: true }}
                                 >
-                                    <img src={HeroImg} alt="Hero Image" className="mt-8 xl:mt-0 w-full h-auto object-cover" />
+                                    <img src={HeroImg} alt="Jasa joki TOEFL dan sertifikat IELTS terpercaya - Tim profesional Toeflin.Kuy siap membantu skor TOEFL IELTS tinggi" className="mt-8 xl:mt-0 w-full h-auto object-cover" />
                                 </motion.div>
                             </div>
                         </div>
